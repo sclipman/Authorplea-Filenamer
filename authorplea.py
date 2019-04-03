@@ -4,7 +4,7 @@
 # Author: Steven J. Clipman
 # Description: This program prefixes all .docx files in the given directory
 # with the last name of the user who authored it.
-# Usage: Place all .docx files to rename in a directory and excute script.
+# Usage: Place all .docx files to rename in a directory and execute script.
 # Example: python3 ~/scripts/authorplea.py
 ###############################################################################
 
