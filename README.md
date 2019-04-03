@@ -1,4 +1,4 @@
-# authorplea
+# authorplea.py
 This program prefixes all `.docx` files in the working directory with the last name of the user who authored it.
 
 - Usage: 
