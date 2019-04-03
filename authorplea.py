@@ -2,14 +2,10 @@
 # Program: authorplea
 # Type: Python 3 Script
 # Author: Steven J. Clipman
-# Description: This program prefixes all .docx files in the working directory
+# Description: This program prefixes all .docx files in the given directory
 # with the last name of the user who authored it.
-# License: GPL-3
-
-# Usage: Place all .docx files you wish to rename in a directory.
-# cd to that directory and excute the python script
-# Example: > cd ~/Desktop/Rename_these_files
-#          > python3 ~/scripts/authorplea.py
+# Usage: Place all .docx files to rename in a directory and excute script.
+# Example: python3 ~/scripts/authorplea.py
 ###############################################################################
 
 
@@ -31,11 +27,13 @@ def getAuthor(filename):
     return(creator)
 
 def main():
-    files = getFiles(os.getcwd())
+    path = input("Enter folder path: ")
+    os.chdir(path)
+    files = getFiles(path)
     for file in files:
         if file[-5:] == '.docx':
             author = getAuthor(file).split()[1]
             rename = author+'_'+file
             os.rename(file,rename)
-    print("Files in",os.getcwd(),"have been renamed.") 
+    print("\nFiles in have been renamed!\n")
 main()

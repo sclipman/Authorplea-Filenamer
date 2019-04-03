@@ -1,12 +1,12 @@
 # authorplea.py
 This program prefixes all `.docx` files in the current working directory with the last name of the user who authored it.
 
-- Usage: 
+- Usage:
 - Place all `.docx` files you wish to rename in a directory.
-- `cd` to that directory and excute the python script
+- Execute the python script and enter the path to the directory when prompted.
 
 **Example:**
 
-`> cd ~/Desktop/Rename_these_files`
+Folder: `Users/Steven/Desktop/Rename_these_files`
 
-`> python3 ~/scripts/authorplea.py`
+`python3 authorplea.py`
