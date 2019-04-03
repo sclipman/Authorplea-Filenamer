@@ -32,8 +32,11 @@ def main():
     files = getFiles(path)
     for file in files:
         if file[-5:] == '.docx':
-            author = getAuthor(file).split()[1]
-            rename = author+'_'+file
-            os.rename(file,rename)
+            try:
+                author = getAuthor(file).split()[1]
+                rename = author+'_'+file
+                os.rename(file,rename)
+            except:
+                print("Error:", file, "did not have proper author metadata.")
     print("\nFiles in have been renamed!\n")
 main()
