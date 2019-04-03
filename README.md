@@ -1,5 +1,5 @@
 # authorplea.py
-This program prefixes all `.docx` files in the working directory with the last name of the user who authored it.
+This program prefixes all `.docx` files in the current working directory with the last name of the user who authored it.
 
 - Usage: 
 - Place all `.docx` files you wish to rename in a directory.
